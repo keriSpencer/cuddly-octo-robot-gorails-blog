@@ -8,7 +8,13 @@
       <div class="p-2 rounded bg-blue-100 text-gray-900">Scheduled</div>
     <% end %>
     <h2><%= link_to blog_post.title, blog_post %></h2><br>
-    <%= blog_post.content %><br>
+    <%= blog_post.content %>
     <br>
   <% end %>
+</div>
+
+<hr>
+
+<div class="my-16">
+  <%== pagy_nav(@pagy) %>
 </div>
