@@ -16,5 +16,5 @@
 <hr>
 
 <div class="my-16">
-  <%== pagy_nav(@pagy) %>
+  <%== pagy_nav(@pagy) if @pagy.count > @pagy.items %>
 </div>
